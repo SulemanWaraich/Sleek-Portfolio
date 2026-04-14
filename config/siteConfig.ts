@@ -9,19 +9,19 @@ export const siteConfig = {
   url: "https://ankurgajurel.com.np",
   ogImage: "/og.png",
   links: {
-    twitter: "https://twitter.com/ankurgajurel",
-    github: "https://github.com/ankurgajurel",
-    linkedin: "https://linkedin.com/in/ankurgajurel",
+    twitter: "https://twitter.com/Suleman_devx",
+    github: "https://github.com/SulemanwWaraich",
+    linkedin: "https://linkedin.com/in/muhammad-suleman-96463b200",
   },
-  creator: "@ankurgajurel",
+  creator: "@Suleman_devx",
   authors: [
     {
-      name: "Ankur Gajurel",
+      name: "Muhammad Suleman",
       url: "https://ankurgajurel.com.np",
     },
   ],
   keywords: [
-    "Ankur Gajurel",
+    "Muhammad Suleman",
     "Software Engineer",
     "Full Stack Developer",
     "Web Developer",

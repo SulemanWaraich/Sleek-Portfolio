@@ -39,7 +39,7 @@ export default async function Home() {
         <Experience />
         <Blog posts={posts} />
         <HomeUtilities />
-        <GithubCalendar username="ankurgajurel" />
+        <GithubCalendar username="SulemanWaraich" />
       </div>
     </main>
   );

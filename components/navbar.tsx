@@ -50,9 +50,9 @@ export default function Navbar() {
 
   const navItems: NavItemEntry[] = [
     { label: "home", link: "/" },
-    { label: "gallery", link: "/gallery" },
+    { label: "projects", link: "/#projects" },
+    { label: "experience", link: "/#experience" },
     { label: "resume", link: "/resume/resume.pdf" },
-    { label: "tools", link: user.toolsWebsite },
     { label: "cal.com", link: user.socials.calcom },
     { label: "twitter", link: user.socials.twitter, icon: Twitter },
     { label: "github", link: user.socials.github, icon: Github },

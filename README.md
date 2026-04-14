@@ -50,7 +50,6 @@ Create a .env.local file in the root directory and add the following:
 OPENAI_API_KEY=your_openai_api_key
 UPSTASH_REDIS_REST_URL=your_upstash_redis_url
 UPSTASH_REDIS_REST_TOKEN=your_upstash_redis_token
-GALLERY_JSON_ENDPOINT=your_gallery_endpoint_url
 # Optional: For voice features
 NEXT_PUBLIC_VAPI_PUBLIC_KEY=your_vapi_key
 ```

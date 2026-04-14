@@ -44,7 +44,7 @@ export async function GithubCalendar({
   return (
     <section className={cn("container p-4 flex flex-col gap-10 my-10 overflow-hidden", className)}>
       <div>
-        <h2 className="text-6xl">github</h2>
+        <h2 className="text-6xl">Github</h2>
       </div>
 
       <div className="flex flex-col gap-4">

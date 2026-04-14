@@ -13,7 +13,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useConsoleVisibleStore } from "@/store/console";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
 
 type Theme = {
@@ -127,6 +127,7 @@ export default function Terminal() {
   const [isMinimized, setIsMinimized] = useState(false);
   const [userHasDragged, setUserHasDragged] = useState(false);
   const { isVisible, setIsVisible } = useConsoleVisibleStore();
+  const router = useRouter();
 
   const [position, setPosition] = useState({
     x: typeof window !== "undefined" ? window.innerWidth - 630 : 0,
@@ -171,10 +172,6 @@ export default function Terminal() {
     }
   };
 
-  const handleRedirectGallery = () => {
-    redirect("/gallery");
-  };
-
   const executeCommand = (cmd: string) => {
     const parts = cmd.trim().split(" ");
     const command = parts[0];
@@ -199,7 +196,8 @@ export default function Terminal() {
           "",
           "Subcommands:",
           "",
-          "   gallery      : See my gallery.",
+          "   projects     : Jump to projects on the home page.",
+          "   experience   : Jump to experience on the home page.",
           "   theme list   : List available themes",
           "   theme set    : Set the theme",
           "   music play   : Play music",
@@ -219,9 +217,16 @@ export default function Terminal() {
         setIsVisible(false);
         break;
 
-      case "gallery":
+      case "projects":
         setInput("");
-        handleRedirectGallery();
+        router.push("/#projects");
+        setIsVisible(false);
+        break;
+
+      case "experience":
+        setInput("");
+        router.push("/#experience");
+        setIsVisible(false);
         break;
 
       case "theme":

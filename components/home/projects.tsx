@@ -10,11 +10,14 @@ export default function HomeProjects() {
   const router = useRouter();
 
   return (
-    <section className="container p-4 flex flex-col gap-10 my-10">
+    <section
+      id="projects"
+      className="container p-4 flex flex-col gap-10 my-10 scroll-mt-20"
+    >
       <div>
         <Link href={"/#projects"}>
           <h2 className="text-6xl flex gap-2 items-end group">
-            <span className="group-hover:underline">projects</span>
+            <span className="group-hover:underline">Projects</span>
             <ArrowUp
               size={48}
               className="group-hover:rotate-45 transition-transform duration-300"

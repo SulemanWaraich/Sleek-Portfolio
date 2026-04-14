@@ -33,10 +33,6 @@ ${posts.map((post) => `- [${post.title}](${siteConfig.url}/blog/${post.id}): ${p
 ## Projects
 
 ${projects.map((p) => `- [${p.name}](${siteConfig.url}/projects/${p.id}): ${p.content || p.description || ""}`).join("\n")}
-
-## Gallery
-
-- [Photo Gallery](${siteConfig.url}/gallery)
 `;
 
   return new Response(content, {

@@ -88,150 +88,110 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 13,
-    name: "nepse-sdk",
-    date: "march, 2026",
-    collabs: [],
-    type: "sdk",
-    content:
-      "reverse-engineered nepal stock exchange's undocumented api and published it as a typed python sdk on pypi. broken jwe tokens, hidden wasm binaries, custom auth schemes, the works.",
-    links: {
-      github: "https://github.com/lagani-org/nepse-sdk/",
-      demo: "https://pypi.org/project/nepse-sdk/",
-    },
-    technologies: ["python", "httpx", "wasmtime", "click", "mypy"],
-  },
-  {
-    id: 12,
-    name: "county gis rag",
-    date: "march, 2026",
-    collabs: [],
-    type: "fullstack",
-    content:
-      "rag-powered chat interface for querying us county gis and parcel data. ingests public gis datasets, embeds them, and lets users ask natural language questions about parcels, zoning, and land records.",
-    links: {
-      github: "https://github.com/ankurgajurel/county-gis-rag",
-    },
-    technologies: ["next.js", "fastapi", "postgresql", "openai", "docker", "sqlalchemy"],
-  },
-  {
-    id: 0,
-    name: "resimator's landing page",
-    date: "march, 2024",
-    collabs: [],
-    type: "fullstack",
-    description:
-      "landing page with strapi cms, graphql, framer motion, and a custom design system",
-    content:
-      "landing page for a finnish company. built with strapi cms for content management and graphql for data fetching. uses framer motion for animations and a custom design system for consistent styling.",
-    links: {
-      demo: "https://staging.resimator.fi/",
-    },
-    technologies: ["strapi", "graphql", "framer motion", "design system"],
-  },
-  {
-    id: 1,
-    name: "a5it",
-    date: "february, 2024",
-    collabs: ["sls0n"],
-    type: "fullstack/devops",
-    description:
-      "e-commerce platform developed in collaboration with silson sapkota",
-    content:
-      "e-commerce platform for selling products online. built with modern web technologies and deployed with proper devops practices.",
-    links: {
-      demo: "https://a5it.com/",
-    },
-    technologies: ["e-commerce", "collaboration"],
-  },
-  {
-    id: 2,
-    name: "aiprep",
-    date: "nov, 2025",
-    collabs: ["dipenbhat557"],
-    type: "fullstack",
-    hidePreview: true,
-    content:
-      "ai video generation tool focused on creating engaging and educational videos for students.",
-    links: {
-      demo: "https://aiprep.in/",
-    },
-    technologies: ["manim", "openrouter", "fastapi", "nextjs", "system design"],
-  },
-  {
-    id: 3,
-    name: "webcraft",
-    date: "december, 2024",
-    collabs: ["sls0n"],
-    type: "fullstack",
-    content:
-      "drag-and-drop website builder tool. users can create websites without coding by dragging components and customizing them.",
-    links: {
-      demo: "https://x.com/usewebcraft",
-    },
-    technologies: ["website builder", "collaboration"],
-  },
-  {
     id: 6,
-    name: "utarchadhav",
+    name: "guftuguu",
     date: "september, 2023",
-    collabs: ["kirangajurel"],
+    collabs: [],
     type: "fullstack",
-    description: "podcast platform",
+    description: "podcast hosting and streaming platform",
     content:
-      "platform for hosting and streaming podcasts. users can upload audio files and listeners can stream episodes.",
+      "platform for hosting and streaming podcasts where creators can upload audio content and listeners can stream episodes seamlessly.",
     links: {
       demo: "https://utarchadhav.com",
     },
-    technologies: ["podcast"],
+    technologies: ["react", "node.js", "audio streaming"],
   },
   {
     id: 9,
-    name: "social media scheduler",
-    date: "halted",
-    collabs: ["sumansid"],
+    name: "school management system (saas)",
+    date: "2026",
+    collabs: [],
     type: "fullstack",
-    links: {
-      demo: "https://schedule.video/",
-    },
+    featured: true,
     description:
-      "features oauth with tiktok, instagram and linkedin, self-hosted scheduler with express, nextauth, prisma with postgres, stripe, and supabase for storage",
+      "comprehensive saas platform for managing school operations including students, teachers, classes, and assignments.",
     content:
-      "social media scheduling tool. users can connect their social accounts and schedule posts across multiple platforms. includes payment processing and file storage.",
+      "built a full-stack school management system designed for institutions to manage academic workflows efficiently. includes role-based dashboards for admins, teachers, and students, assignment management, attendance tracking, and centralized data handling. integrates authentication, cloud storage, and scalable backend architecture for real-world deployment.",
     technologies: [
-      "oauth",
-      "express",
-      "nextauth",
+      "next.js",
+      "react",
+      "node.js",
+      "postgresql",
       "prisma",
-      "postgres",
-      "stripe",
-      "supabase",
+      "authentication",
+      "cloud storage",
+    ],
+    features: [
+      {
+        title: "role-based dashboards",
+        description:
+          "separate dashboards for admins, teachers, and students with controlled access.",
+      },
+      {
+        title: "assignment management",
+        description:
+          "create, submit, and manage assignments with structured workflows.",
+      },
+      {
+        title: "attendance tracking",
+        description:
+          "track and manage student attendance digitally.",
+      },
+      {
+        title: "scalable architecture",
+        description:
+          "designed for real-world usage with secure and scalable backend systems.",
+      },
     ],
   },
   {
     id: 10,
-    name: "nepal atlas map",
-    date: "feb, 2026",
+    name: "pakpay",
+    date: "2025",
     collabs: [],
-    type: "fullstack",
+    type: "fintech / fullstack",
+    featured: true,
+    description:
+      "fintech platform for secure digital payments with real-time processing and wallet infrastructure.",
     content:
-      "nepal's provinces, district, municipality and constituency visualization",
-    links: {
-      demo: "https://electionatlas.ankurgajurel.com.np/immersive",
-    },
-    technologies: ["nextjs", "d3.js", "topojson", "tailwind css"],
-  },
-  {
-    id: 11,
-    name: "cognistream.ai",
-    date: "july, 2025 - feb, 2026",
-    collabs: [],
-    type: "fullstack",
-    content:
-      "ai video generation tool focused on creating engaging and educational videos for students.",
-    links: {
-      demo: "https://cognistream.ai/",
-    },
-    technologies: ["nextjs", "fastapi", "inngest", "typescript", "supabase"],
+      "pakpay is a full-stack fintech platform built with microservices architecture. features real-time websocket pipelines, secure wallet systems, bank webhook integrations, and automated on-ramp/off-ramp payments. includes analytics dashboards and ai-powered payment insights. deployed on aws using docker and github actions for scalable and reliable infrastructure.",
+    technologies: [
+      "next.js",
+      "node.js",
+      "postgresql",
+      "websockets",
+      "microservices",
+      "aws",
+      "docker",
+      "github actions",
+      "ci/cd",
+    ],
+    features: [
+      {
+        title: "secure wallet system",
+        description:
+          "manage balances and transactions with secure wallet infrastructure.",
+      },
+      {
+        title: "real-time payments",
+        description:
+          "websocket-based pipelines for instant transaction updates.",
+      },
+      {
+        title: "bank integrations",
+        description:
+          "webhook-based syncing with banking systems for automation.",
+      },
+      {
+        title: "analytics dashboard",
+        description:
+          "track transactions and insights with real-time data visualization.",
+      },
+      {
+        title: "ai insights",
+        description:
+          "intelligent analysis of payment behavior and trends.",
+      },
+    ],
   },
 ];

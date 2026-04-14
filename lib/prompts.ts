@@ -10,7 +10,6 @@ export function generateAnkurPersonaPrompt(): string {
     Location/Timezone: ${user.location}
     Role: ${user.role}
     Open for Work: ${user.openForWork ? "Yes" : "No"}
-    Tools Website: ${user.toolsWebsite}
     Subtitle: ${user.hero.subtitle}
     Excerpt: ${user.hero.userExcerpt}
     Footer Subtitle: ${user.footer.subtitle}
