@@ -1,27 +1,161 @@
 ---
-title: "saving my company 57% on aws"
-excerpt: "how I helped my company save money on cloud services"
-date: "june 15, 2024"
+title: "Scaling Pakpay To Handle 1000+ Users Without Breaking The System"
+excerpt: "how I improved performance using vertical scaling, load balancing, and backend optimizations"
+date: "april 16, 2026"
 tags:
-  - cloud
-  - aws
-  - cost-optimization
+  - system-design
+  - scalability
   - devops
-  - automation
+  - performance
+  - backend
 ---
 
-when I stepped into my new role, I inherited what many tech teams face cloud infrastructure that had grown organically with little optimization. Our previous engineer, likely focused on stability over cost, had deployed all our projects on oversized EC2 instances. We were bleeding nearly $3,500 monthly on resources that sat mostly idle.
+when I launched pakpay, I wasn’t thinking about scale.
 
-Looking at those AWS bills made me wonder lmao. I knew we could do better without sacrificing performance.
+it was simple:
+- build fast  
+- ship fast  
+- make it work  
 
-I dove into each of our 5-7 projects, understanding their actual needs versus what they were provisioned with. Container technology seemed like the perfect solution. By migrating several workloads to Amazon ECS, we could share resources more efficiently and scale based on actual demand.
+but then something interesting happened.
 
-The migration wasn't just technical, it required convincing the product manager that this change wouldn't disrupt operations. Each service moved was a small victory, and watching resource utilization climb while costs dropped was deeply satisfying.
+after sharing it, **1000+ users started visiting**, and that’s when reality hit.
 
-Within weeks, our monthly AWS bill plummeted to around $1,500, a 57% reduction that made both engineering and finance teams happy.
+the system wasn’t designed for that.
 
-Throughout my period at this company, I continued managing our essential AWS services—S3, RDS, the remaining EC2 instances, ECS, SES, and SQS—ensuring our applications ran smoothly while becoming dramatically more cost-efficient.
+---
 
-After this was successful, I was offered a 25% raise so everything was worth it lmao.
+## the problem
 
-Sometimes the most impactful engineering isn't building something new, but optimizing what you already have.
+initially, everything was running on a basic setup:
+- single server  
+- no load distribution  
+- minimal optimization  
+
+it worked fine for testing.
+
+but under real traffic:
+- response times increased  
+- api latency became noticeable  
+- database queries slowed down  
+
+👉 classic “it works on my machine” moment
+
+---
+
+## what i focused on
+
+i didn’t rebuild everything.
+
+i focused on:
+- handling more users  
+- reducing latency  
+- improving response time  
+
+---
+
+## 1. vertical scaling (quick win)
+
+first step was simple:
+
+👉 increase server resources
+
+- more cpu  
+- more ram  
+
+this immediately:
+- reduced response delays  
+- stabilized the system under load  
+
+but there’s a limit.
+
+👉 vertical scaling is fast  
+👉 but not a long-term solution  
+
+---
+
+## 2. load balancing (handling traffic better)
+
+instead of sending all traffic to one server:
+
+👉 i distributed requests
+
+this helped:
+- prevent overload  
+- improve availability  
+- handle concurrent users better  
+
+even basic load balancing made a noticeable difference.
+
+---
+
+## 3. reducing latency (backend optimization)
+
+i focused on backend performance:
+
+- optimized database queries  
+- reduced unnecessary api calls  
+- improved response handling  
+
+👉 result:
+- faster responses  
+- smoother user experience  
+
+---
+
+## 4. smarter scaling decisions
+
+i didn’t just scale blindly.
+
+i used:
+- analytics (user traffic insights)  
+- real usage patterns  
+
+to understand:
+- when load increases  
+- where bottlenecks happen  
+
+👉 this helped me scale **based on actual demand**
+
+---
+
+## results
+
+after these changes:
+
+- handled **1000+ concurrent users**  
+- improved load time significantly  
+- reduced latency across endpoints  
+- system became more stable under traffic  
+
+---
+
+## what i learned
+
+### 1. scaling is not just adding resources
+you need to understand **where the bottleneck is**
+
+---
+
+### 2. performance issues show up only in real usage
+local testing never reveals real-world problems
+
+---
+
+### 3. simple optimizations go a long way
+you don’t always need complex architecture
+
+---
+
+## final thoughts
+
+> “building is easy. scaling is where engineering actually starts.”
+
+pakpay taught me that:
+- real problems come after launch  
+- performance matters more than features  
+- and small decisions can have a big impact  
+
+this wasn’t about building something new.
+
+it was about making something **work under pressure**.
