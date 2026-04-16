@@ -1,7 +1,7 @@
 ---
 title: "Scaling Pakpay To Handle 1000+ Users Without Breaking The System"
 excerpt: "how I improved performance using vertical scaling, load balancing, and backend optimizations"
-date: "april 16, 2026"
+date: "November, 2026"
 tags:
   - system-design
   - scalability

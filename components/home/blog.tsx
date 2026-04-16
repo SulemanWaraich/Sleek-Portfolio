@@ -8,7 +8,7 @@ export default function HomeBlog({ posts }: { posts: BlogPostMeta[] }) {
       <div>
         <Link href="/#blogs">
           <h2 className="text-6xl flex gap-2 items-end group">
-            <span className="group-hover:underline">writes</span>
+            <span className="group-hover:underline">Writes</span>
             <ArrowUp
               size={48}
               className="group-hover:rotate-45 transition-transform duration-300"

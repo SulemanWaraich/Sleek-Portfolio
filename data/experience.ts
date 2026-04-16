@@ -1,14 +1,15 @@
 export const experiences = [
   {
     id: 0,
-    company: "jugnuu",
+    company: "Jugnuu",
     website: "",
     stacks: [
       "javascript",
-      "react",
+      "requirement engineering",
       "node.js",
       "full-stack development",
       "mentoring",
+      "managing client relationships",
     ],
     roles: [
       {
@@ -22,7 +23,7 @@ export const experiences = [
   },
   {
     id: 1,
-    company: "pakpay ",
+    company: "Pakpay ",
     website: "",
     stacks: [
       "next.js",
@@ -34,6 +35,7 @@ export const experiences = [
       "docker",
       "github actions",
       "ci/cd",
+      "redis"
     ],
     roles: [
       {

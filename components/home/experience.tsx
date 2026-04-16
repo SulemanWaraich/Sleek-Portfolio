@@ -7,7 +7,7 @@ export default function Experience() {
       className="container p-4 flex flex-col gap-10 my-10 scroll-mt-20"
     >
       <div>
-        <h2 className="text-6xl">experience</h2>
+        <h2 className="text-6xl">Experience</h2>
       </div>
 
       <div className="flex flex-col gap-12">

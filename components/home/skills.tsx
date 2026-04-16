@@ -4,7 +4,7 @@ export default function HomeSkills() {
   return (
     <section className="container p-4 flex flex-col gap-10 my-10">
       <div>
-        <h2 className="text-6xl">skills</h2>
+        <h2 className="text-6xl">Skills</h2>
       </div>
 
       {/* Desktop table */}

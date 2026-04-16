@@ -52,36 +52,41 @@ export default function Hero() {
 
         <div className="flex flex-wrap gap-4">
           <Link
-            href="/#projects"
+            href="https://github.com/SulemanWaraich"
             className="group flex items-center gap-2 text-lg hover:underline"
+            target="_blank"
           >
-            <span>view projects</span>
+            <span>Github</span>
             <ArrowUp
               size={20}
               className="group-hover:rotate-45 transition-transform duration-300"
             />
           </Link>
-          <Link
-            href="/#blogs"
-            className="group flex items-center gap-2 text-lg hover:underline"
-          >
-            <span>writes</span>
-            <ArrowUp
-              size={20}
-              className="group-hover:rotate-45 transition-transform duration-300"
-            />
-          </Link>
-          <a
-            href={user.socials.calcom}
+         
+          <Link  
+            href="https://linkedin.com/in/muhammad-suleman-9aa056292"
             target="_blank"
             className="group flex items-center gap-2 text-lg hover:underline"
-          >
-            <span>book a call</span>
+            >
+            <span>Linkedin</span>
             <ArrowUp
               size={20}
               className="group-hover:rotate-45 transition-transform duration-300"
             />
-          </a>
+          </Link>
+          
+          <Link
+            href="https://suleman-devx.hashnode.dev/"
+            className="group flex items-center gap-2 text-lg hover:underline"
+            target="_blank"
+          >
+            <span>Articles</span>
+            <ArrowUp
+              size={20}
+              className="group-hover:rotate-45 transition-transform duration-300"
+            />
+          </Link>
+
         </div>
       </div>
     </section>
