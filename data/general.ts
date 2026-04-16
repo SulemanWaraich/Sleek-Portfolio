@@ -17,7 +17,7 @@ export const user = {
   socials: {
     linkedin: "https://linkedin.com/in/muhammad-suleman-96463b200",
     twitter: "https://twitter.com/Suleman_devx",
-    github: "https://github.com/SulemanwWaraich",
+    github: "https://github.com/SulemanWaraich",
     mail: "mailto:suleman.devx@gmail.com",
     calcom: "https://cal.com/gajurel",
   },

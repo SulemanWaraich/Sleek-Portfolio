@@ -10,7 +10,7 @@ export const siteConfig = {
   ogImage: "/og.png",
   links: {
     twitter: "https://twitter.com/Suleman_devx",
-    github: "https://github.com/SulemanwWaraich",
+    github: "https://github.com/SulemanWaraich",
     linkedin: "https://linkedin.com/in/muhammad-suleman-96463b200",
   },
   creator: "@Suleman_devx",
