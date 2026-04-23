@@ -36,16 +36,16 @@ export default function HomeProjectCard({
         )}
       </div>
       <div className="flex flex-wrap gap-2">
-        {project.collabs.map((collab) => (
+        {project.inspiredBy.map((inspiration) => (
           <a
-            key={collab}
-            href={`https://github.com/${collab}`}
+            key={inspiration.url}
+            href={inspiration.url}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             className="text-sm text-foreground hover:text-blue-600 transition-colors duration-200 flex items-center gap-1 group/collab"
           >
-            @{project.collabs.length > 1 ? collab.slice(0, 5) + "..." : collab}
+            @{project.inspiredBy.length > 1 ? inspiration.name?.slice(0, 5) + "..." : inspiration.name}
           </a>
         ))}
       </div>

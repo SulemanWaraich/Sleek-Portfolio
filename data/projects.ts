@@ -1,7 +1,8 @@
 export type Project = {
   id: number;
   name: string;
-  collabs: string[];
+  inspiredBy: [{name?: string, url?: string}];
+  // inspiredBy: string[];
   type: string;
   date: string;
   hidePreview?: boolean;
@@ -31,7 +32,7 @@ export const projects: Project[] = [
     id: 10,
     name: "PakPay (wallet)",
     date: "2025 - Present",
-    collabs: [],
+    inspiredBy: [{name: "Myself", url: ""}],
     type: "fintech / fullstack",
     featured: true,
     description:
@@ -90,7 +91,7 @@ export const projects: Project[] = [
     id: 14,
     name: "Ryuk ai",
     date: "april, 2026",
-    collabs: [],
+    inspiredBy: [{name: "ankurgajurel", url: "https://github.com/ankurgajurel"}],
     type: "ai/saas",
     featured: true,
     description:
@@ -151,7 +152,7 @@ export const projects: Project[] = [
     id: 9,
     name: "School Management System (saas)",
     date: "feb, 2026",
-    collabs: [],
+    inspiredBy: [{name: "Odoo", url: "https://apps.odoo.com/apps/modules/16.0/wk_school_management"}],
     type: "fullstack/ai",
     featured: true,
     description:
@@ -199,7 +200,7 @@ export const projects: Project[] = [
     id: 6,
     name: "Awaaz Stories",
     date: "march, 2025",
-    collabs: [],
+    inspiredBy: [{name: "utarchadhav", url: "https://utarchadhav.com/"}],
     type: "frontend/BaaS",
     description: "podcast hosting and streaming platform",
     content:
@@ -213,7 +214,7 @@ export const projects: Project[] = [
   id: 7,
   name: "StreamX",
   date: "dec, 2024",
-  collabs: [],
+  inspiredBy: [{name: "twitter", url: "https://twitter.com"}],
   type: "backend",
   description: "YouTube + Twitter inspired social video platform",
   content:

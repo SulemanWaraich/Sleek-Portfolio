@@ -32,7 +32,7 @@ export default function HomeProjects() {
           <div className="table-border-header grid grid-cols-5 p-1 text-xs text-foreground/50">
             <div>/ DATE</div>
             <div className="col-span-2">/ PROJECT</div>
-            <div>/ COLLABS</div>
+            <div>/ INSPIRED BY</div>
             <div className="grid grid-cols-2">
               <div>/ TYPE</div>
               <div></div>
@@ -72,18 +72,18 @@ export default function HomeProjects() {
             </div>
             <div className="flex items-center justify-between">
               <span className="text-xs text-foreground/50">{project.type}</span>
-              {project.collabs.length > 0 && (
+              {project.inspiredBy.length > 0 && (
                 <div className="flex gap-1">
-                  {project.collabs.map((collab) => (
+                  {project.inspiredBy.map((inspiration) => (
                     <a
-                      key={collab}
-                      href={`https://github.com/${collab}`}
+                      key={inspiration.url}
+                      href={inspiration.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
                       className="text-xs text-foreground/50 hover:text-foreground transition-colors"
                     >
-                      @{collab}
+                      @{inspiration.name}
                     </a>
                   ))}
                 </div>
