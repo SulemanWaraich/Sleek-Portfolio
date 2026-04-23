@@ -19,7 +19,7 @@ export const user = {
     twitter: "https://twitter.com/Suleman_devx",
     github: "https://github.com/SulemanWaraich",
     mail: "mailto:suleman.devx@gmail.com",
-    calcom: "https://cal.com/gajurel",
+    calcom: "https://cal.com/muhammad-suleman",
   },
   playlist: "1YODNPvuFFJtpgvyxZnxYG",
   hobbies: ["Football", "Traveling", "Mix Martial Arts", "Coffee"],
