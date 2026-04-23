@@ -12,6 +12,7 @@ export type Project = {
     github?: string;
     demo?: string;
     docs?: string;
+    caseStudy?: string;
   };
   technologies?: string[];
   images?: {
@@ -29,7 +30,7 @@ export const projects: Project[] = [
    {
     id: 10,
     name: "PakPay (wallet)",
-    date: "2025",
+    date: "2025 - Present",
     collabs: [],
     type: "fintech / fullstack",
     featured: true,
@@ -39,17 +40,23 @@ export const projects: Project[] = [
       "pakpay is a full-stack fintech platform built with microservices architecture. features real-time websocket pipelines, secure wallet systems, bank webhook integrations, and automated on-ramp/off-ramp payments. includes analytics dashboards and ai-powered payment insights. deployed on aws using docker and github actions for scalable and reliable infrastructure.",
     links: {
       demo: "https://pakpay10.site/",
+      caseStudy: "/case-studies/pakpay",
     },
       technologies: [
       "next.js",
       "node.js",
       "postgresql",
+      "prisma",
+      "cloudflare workers",
       "websockets",
+      "redis",
       "microservices",
       "aws",
       "docker",
       "github actions",
       "ci/cd",
+      "fintech security",
+      "monorepo architecture",
     ],
     features: [
       {
@@ -82,7 +89,7 @@ export const projects: Project[] = [
   {
     id: 14,
     name: "Ryuk ai",
-    date: "march, 2026",
+    date: "april, 2026",
     collabs: [],
     type: "ai/saas",
     featured: true,
@@ -143,7 +150,7 @@ export const projects: Project[] = [
   {
     id: 9,
     name: "School Management System (saas)",
-    date: "2026",
+    date: "feb, 2026",
     collabs: [],
     type: "fullstack/ai",
     featured: true,
@@ -156,12 +163,13 @@ export const projects: Project[] = [
     },
       technologies: [
       "next.js",
-      "react",
-      "node.js",
+      "python",
+      "flask",
       "postgresql",
       "prisma",
       "authentication",
       "cloud storage",
+      "emergent"
     ],
     features: [
       {
@@ -190,15 +198,29 @@ export const projects: Project[] = [
     {
     id: 6,
     name: "Awaaz Stories",
-    date: "september, 2023",
+    date: "march, 2025",
     collabs: [],
-    type: "fullstack",
+    type: "frontend/BaaS",
     description: "podcast hosting and streaming platform",
     content:
       "platform for hosting and streaming podcasts where creators can upload audio content and listeners can stream episodes seamlessly.",
     links: {
       demo: "https://awaaz-stories.netlify.app/",
     },
-    technologies: ["react", "node.js", "audio streaming"],
+    technologies: ["react", "supabase", "audio streaming", "cloudinary", "tailwindcss", "shadcn/ui"],
   },
+{
+  id: 7,
+  name: "StreamX",
+  date: "dec, 2024",
+  collabs: [],
+  type: "backend",
+  description: "YouTube + Twitter inspired social video platform",
+  content:
+    "A backend-focused project inspired by YouTube and Twitter, enabling users to upload short video content, interact through likes and comments, and engage in real-time social discussions. Built a complete backend system including authentication, media handling, API design, and scalable data management.",
+  links: {
+    demo: "https://youtube-twitter.vercel.app/",
+  },
+  technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT Auth", "Media Handling"],
+}
 ];

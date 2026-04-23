@@ -107,6 +107,21 @@ export default async function ProjectPage({
                 </Button>
               </a>
             )}
+            {project.links?.caseStudy && (
+              <a
+                href={project.links.caseStudy}
+                rel="noopener noreferrer"
+                className="no-underline"
+              >
+                <Button className="group flex items-center gap-2 text-sm">
+                  <span>case study</span>
+                  <ArrowUp
+                    size={16}
+                    className="group-hover:rotate-45 transition-transform duration-300"
+                  />
+                </Button>
+              </a>
+            )}
             {project.links?.github && (
               <a
                 href={project.links.github}
