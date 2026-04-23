@@ -214,7 +214,7 @@ export const projects: Project[] = [
   id: 7,
   name: "StreamX",
   date: "dec, 2024",
-  inspiredBy: [{name: "twitter", url: "https://twitter.com"}],
+  inspiredBy: [{name: "youtube", url: "https://youtube.com"}],
   type: "backend",
   description: "YouTube + Twitter inspired social video platform",
   content:
