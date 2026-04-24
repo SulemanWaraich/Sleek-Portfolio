@@ -52,10 +52,10 @@ ${exp.roles
     - Name: ${proj.name}
       Date: ${proj.date}
       Collaborators: ${
-        proj.collabs.length > 0 ? proj.collabs.join(", ") : "None"
+      (proj.collabs ?? []).length > 0 ? proj.collabs?.join(", ") : "None"
       }
       Type: ${proj.type}
-      Description: ${proj.description || "N/A"}
+      Description: ${proj.description || "N/A"} 
       Content: ${proj.content || "N/A"}
       Links: GitHub: ${proj.links?.github || "N/A"}, Demo: ${
         proj.links?.demo || "N/A"

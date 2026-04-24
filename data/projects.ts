@@ -9,6 +9,7 @@ export type Project = {
   featured?: boolean;
   description?: string;
   content?: string;
+  collabs?: string[];
   links?: {
     github?: string;
     demo?: string;
