@@ -41,7 +41,7 @@ export const projects: Project[] = [
     content:
       "pakpay is a full-stack fintech platform built with microservices architecture. features real-time websocket pipelines, secure wallet systems, bank webhook integrations, and automated on-ramp/off-ramp payments. includes analytics dashboards and ai-powered payment insights. deployed on aws using docker and github actions for scalable and reliable infrastructure.",
     links: {
-      demo: "https://pakpay10.site/",
+      demo: "https://pakpay.site/",
       caseStudy: "/case-studies/pakpay",
     },
       technologies: [
