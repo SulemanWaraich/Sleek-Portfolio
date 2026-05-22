@@ -15,7 +15,7 @@ export const user = {
     subtitle: "Software Engineer",
   },
   socials: {
-    linkedin: "https://linkedin.com/in/muhammad-suleman-96463b200",
+    linkedin: "https://linkedin.com/in/muhammad-sulemannn",
     twitter: "https://twitter.com/Suleman_devx",
     github: "https://github.com/SulemanWaraich",
     mail: "mailto:suleman.devx@gmail.com",
